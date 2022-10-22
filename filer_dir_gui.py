@@ -34,7 +34,7 @@ class Core:
         self.gen_clist()
         return self.pfile
 
-class FrameMyApp(tkinter.Frame):
+class FrameFilerDir(tkinter.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.core = Core()
@@ -72,6 +72,6 @@ if __name__ == '__main__':
     root = tkinter.Tk()
     root.title('')
     root.geometry("300x200")
-    app = FrameMyApp(root)
+    app = FrameFilerDir(root)
     app.pack(fill=tkinter.BOTH)
     root.mainloop()
